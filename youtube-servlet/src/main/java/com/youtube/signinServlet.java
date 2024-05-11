@@ -38,11 +38,11 @@ public class signinServlet extends HttpServlet {
 		try{
             Thread.sleep(2000);
 			Class.forName("com.mysql.cj.jdbc.Driver");//com.mysql.cj.jdbc.Driver
-			String url="jdbc:mysql://172.31.33.5/mydb";//jdbc:mysql://localhost:3306/sys
+			String url="jdbc:mysql://monorail.proxy.rlwy.net:46239/railway";//jdbc:mysql://localhost:3306/sys
 		//oracle.jdbc.OracleDriver	
 		//	jdbc:oracle:thin:@localhost:1521:xe
 			String uName="root";
-			String uPassword="root#007";//root#007 server
+			String uPassword="LMvPUOMeCVbUQcshKtxcgpEaotDikubq";//root#007 server
 			Connection con=DriverManager.getConnection(url,uName,uPassword);
 			System.out.println("driver Registered....");
 			Statement stm= con.createStatement();
