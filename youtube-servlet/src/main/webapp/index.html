@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Page</title>
+
+<style>
+.container{
+  width:30%;
+  border:1px solid black;
+  margin:auto;
+  padding:20px;
+  font-size:20px;
+}
+#myform table tr td input{
+  font-size:20px;
+}
+
+</style>
+
+</head>
+<body>
+<h1>Welcome to myServlet </h1>
+<p>Httpservlet is used</p>
+<h2><a href="Servletyoutube">YouTube</a></h2>
+<br>
+<div class="container">
+<h1>My Form</h1>
+
+
+<form id="myform" action="Register" method="post">
+
+<table>
+
+<tr>
+<td>Enter your Name :</td>
+<td><input type="text" name="user_name" placeholder="Enter here" /></td>
+</tr>
+
+<tr>
+<td>Enter your Password :</td>
+<td><input type="password" name="user_password" placeholder="Ente password" /></td>
+</tr>
+<tr>
+<td>Enter your Email :</td>
+<td><input type="Email" name="user_email" placeholder="Enter Email" /></td>
+</tr>
+<tr>
+<td>Select Gender :</td>
+<td><input type="radio" name="user_gender" value="male" />Male &nbsp; &nbsp; <input type="radio" name="user_gender" value="female" />Female</td>
+</tr>
+
+<tr>
+<td>Select Course :</td>
+<td>
+<select name="user_course">
+<option value="java">Java</option>
+<option value="php">Php</option>
+<option value="python">Python</option>
+<option value="html">Html</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td style="text-align:right;"><input type="checkbox" value="checked" name="condition" /></td>
+<td>Agree terms and condition</td>
+</tr>
+
+<tr>
+<td></td>
+<td><button type="submit">Register</button>
+<button type="reset">Reset</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+</div>
+
+</body>
+</html> 
