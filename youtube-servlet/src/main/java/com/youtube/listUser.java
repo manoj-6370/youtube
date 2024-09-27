@@ -27,9 +27,9 @@ public class listUser extends HttpServlet{
 		
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		String url="jdbc:mysql://monorail.proxy.rlwy.net:46239/railway";
+		String url="jdbc:mysql://localhost:3306/sys";
 		String uName="root";
-		String uPassword="LMvPUOMeCVbUQcshKtxcgpEaotDikubq";
+		String uPassword="root";
 		Connection con=DriverManager.getConnection(url,uName,uPassword);
 		System.out.println("driver Registered....");
 		
